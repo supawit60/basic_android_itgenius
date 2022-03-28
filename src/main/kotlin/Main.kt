@@ -1,3 +1,4 @@
 fun main() {
-    kDataType()
+//    kDataType()
+    kVariables()
 }

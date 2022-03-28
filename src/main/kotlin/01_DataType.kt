@@ -1,5 +1,5 @@
 fun kDataType() {
-    println("# Signed Integral Type \n -------------")
+    println("# Signed Integral Type \n---------------------")
     val kByte: Byte = 120   // -128 to 127
     val kShort: Short = 20_000  // -32768 to 32767
     val kInt: Int = 2_147_483_647   // -2147483648 to 2147483647
@@ -9,4 +9,33 @@ fun kDataType() {
     println("kShort = $kShort")
     println("kInt = $kInt")
     println("kLong = $kLong")
+
+    println("\n# Unsigned Integral Type\n---------------------")
+    val kUByte: UByte = 255U // 0 to 255
+    val kUShort: UShort = 65_535U // 0 to 65535
+    val kUInt: UInt = 4_294_967_295U // 0 to 4294967295
+    val kULong: ULong = 18_446_744_073_709_551_615UL // 0 to 18446744073709551615
+
+    println("kUByte=$kUByte")
+    println("kUShort=$kUShort")
+    println("kUInt=$kUInt")
+    println("kULong=$kULong")
+
+    println("\n# Floating Point Type\n---------------------")
+    val kFloat: Float = 3.4028235E38F // 1.4E-45 to 3.4028235E38
+    val kDouble: Double = 1.7976931348623157E308 // 4.9E-324 to 1.7976931348623157E308
+    println("kFloat=$kFloat")
+    println("kDouble=$kDouble")
+
+    println("\n# Boolean Type\n---------------------")
+    val kBoolean1: Boolean = true
+    val kBoolean2: Boolean = false
+    println("kBoolean1=$kBoolean1")
+    println("kBoolean2=$kBoolean2")
+
+    println("\n# String Type\n---------------------")
+    val kChar: Char = 'S'
+    val kString: String = "Samit Koyom"
+    println("kChar=$kChar")
+    println("kString=$kString")
 }

@@ -1,5 +1,6 @@
 fun main() {
 //    kDataType()
 //    kVariables()
-    kOperator()
+//    kOperator()
+    kConditions()
 }

@@ -73,5 +73,6 @@ fun kOperator() {
     for (x3 in 10..20 step 3) print("$x3 "); println() // 10 13 16 19
     for (x4 in 'a'..'f') print("$x4 "); println() // a b c d e f
     for (x5 in 'K'..'Z' step 2) print("$x5 "); println() // K M O Q S U W Y
+    for (x6 in 'ก'..'ฮ' step 2) print("$x6 "); println()
 
 }

@@ -46,4 +46,11 @@ fun kOperator() {
     println(mm) // 31
     println(nn) // 21
 
+    println("--------------------------")
+    val d1 = (2 == 1); println(d1) // false
+    val d2 = (2 != 1); println(d2)  // true
+    val d3 = (2 > 1); println(d3) // true
+    val d4 = (2 <= 1); println(d4) // false
+    val d5 = "kotlin" == "kotlin"; println(d5) // true
+    val d6 = "android" == "Android"; println(d6) // false
 }

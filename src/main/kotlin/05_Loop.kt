@@ -36,7 +36,15 @@ fun kLoop() {
     var n = 1
     while ((n * n) < 100) {
         n += 1
+        println(n)
     }
     println("n = $n") //n = 10
 
+    println("-----------------")
+    // การใช้ลูปแบบ do-while
+    do {
+        print("กรุณาใส่รหัส >> ")
+        var code = readLine()
+    } while (code != "1234")
+    println("ขอบคุณค่ะ")
 }

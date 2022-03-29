@@ -1,3 +1,4 @@
+import java.text.DecimalFormat
 import java.text.NumberFormat
 import kotlin.math.*
 import kotlin.random.Random
@@ -104,5 +105,22 @@ fun kArray() {
     numFormat = NumberFormat.getCurrencyInstance()
     strf = numFormat.format(2596530)
     println(strf) //THB2,596,530.00 (ขึ้นกับการตั้งค่าในระบบปฏิบัติการ)
+
+    println("-----------------")
+    // ตัวอย่างการใช้ DecimalFormat
+    val pattern = "#,#"
+    var decimalFormat = DecimalFormat()
+    var str = decimalFormat.format(1234567)
+    println(str)  //1,234,567
+    decimalFormat.applyPattern("00000")
+    str = decimalFormat.format(123)
+    println(str) //00123
+    decimalFormat.applyPattern("#.##%")
+    str = decimalFormat.format(0.086)
+    println(str) //8.6%
+    decimalFormat.applyPattern("00.00")
+    str = decimalFormat.format(1.2)
+    println(str) //01.20
+
 
 }

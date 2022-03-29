@@ -1,4 +1,5 @@
 import kotlin.math.*
+import kotlin.random.Random
 
 fun kArray() {
     // ตัวอย่างการใช้ Pair
@@ -79,5 +80,20 @@ fun kArray() {
     val radius = 10.0
     val circleArea = PI * radius.pow(2)
     println(circleArea)
+
+    println("-----------------")
+
+    // ตัวอย่างการสร้างเลขสุ่ม
+    val a = Random.nextInt() //เช่น 2013835617
+    val b = Random.nextInt(1000) //ได้เลขที่มีค่าน้อยกว่า 1000
+    val c = Random.nextInt(100, 1000) //ได้เลขที่มีค่าระหว่าง 100 - 999
+    val d = Random.nextDouble() //เช่น 0.387504244
+    val bool = Random.nextBoolean() //จะได้ true หรือ false
+    println(a)
+    println(b)
+    println(c)
+    println(d)
+    println(bool)
+
 
 }

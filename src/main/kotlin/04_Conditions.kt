@@ -45,5 +45,15 @@ fun kConditions() {
         date == 1 || date == 16 -> println("วันนี้รวย")
     }
 
+    println("-----------------")
+    val device = "Oppo"
+    val os = when (device) {
+        "Oppo", "Vivo", "Samsung", "Sony" -> "Android"
+        "iPhone" -> "iOS"
+        "iPad" -> "iPadOS"
+        else -> "Unknown"
+    }
+    print(os) //Android
+
 
 }

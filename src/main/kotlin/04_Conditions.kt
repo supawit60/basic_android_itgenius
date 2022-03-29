@@ -35,5 +35,15 @@ fun kConditions() {
         "China", "Taiwan", "Hong Kong" -> println("Chinese")
     }
 
+    println("-----------------")
+    val date = 1
+    val month = 10
+    when {
+        date == 1 && month == 1 -> println("วันขึ้นปีใหม่")
+        date == 14 && month == 2 -> println("วันวาเลนไทน์")
+        date >= 13 && date <= 15 && month == 4 -> println("วันสงกรานต์")
+        date == 1 || date == 16 -> println("วันนี้รวย")
+    }
+
 
 }

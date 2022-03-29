@@ -4,5 +4,6 @@ fun main() {
 //    kOperator()
 //    kConditions()
 //    kLoop()
-    kArray()
+//    kArray()
+    kNullSafety()
 }

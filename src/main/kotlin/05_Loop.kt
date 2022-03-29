@@ -25,4 +25,8 @@ fun kLoop() {
         println(i)
     }
 
+    println("-----------------")
+    repeat(5) {
+        println("Kotlin")
+    }
 }

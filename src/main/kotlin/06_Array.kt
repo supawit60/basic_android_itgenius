@@ -14,4 +14,13 @@ fun kArray() {
     val error = Pair(404, "Not Found")
     println("Error: ${error.first} - ${error.second}")  //Error 404 - Not Found
 
+    println("-----------------")
+    val (latitude, longitude) = Pair(80.1234, 100.5678)
+    println(latitude)
+    println("-----------------")
+    val (firstname, lastname) = Pair("James", "Bond")
+    println("Hi $firstname $lastname")
+
+
+
 }

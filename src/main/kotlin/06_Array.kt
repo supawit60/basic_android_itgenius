@@ -21,6 +21,14 @@ fun kArray() {
     val (firstname, lastname) = Pair("James", "Bond")
     println("Hi $firstname $lastname")
 
-
+// ตัวอย่างการเก็บข้อมูลในแบบ Triple
+    val boxSize = Triple(10, 20, 30)
+    val volume = boxSize.first * boxSize.second * boxSize.third
+    val (date, month, year) = Triple(1, "มกราคม", 2565)
+    println("วันนี้ตรงกับ $date $month $year")
+    println("-----------------")
+    val (hour, minute, _) = Triple(12, 30, 0)
+    println("ขณะนี้เวลา $hour:$minute")
+    println("-----------------")
 
 }

@@ -53,4 +53,17 @@ fun kOperator() {
     val d4 = (2 <= 1); println(d4) // false
     val d5 = "kotlin" == "kotlin"; println(d5) // true
     val d6 = "android" == "Android"; println(d6) // false
+
+    println("--------------------------")
+    var status: Boolean
+    status = (1 < 2) && (3 < 4); println(status) // (true && true) = true
+    status = (1 < 2) && (3 == 4); println(status) // (true && false) = false
+    status = (1 > 2) && (3 > 4); println(status) // (false && false) = false
+    status = (1 > 2) || (3 > 4); println(status) // (false || false) = false
+    status = (1 < 2) || (3 == 4); println(status) // (true || false) = true
+    status = (1 < 2) || (3 < 4); println(status) // (true || true) = true
+    status = !(1 < 2); println(status) // !true = false
+    status = !(1 > 2); println(status) // !false = true
+    status = !((1 < 2) || (3 < 4)); println(status) // !(true || false) = !true = false
+
 }

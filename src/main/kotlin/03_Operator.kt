@@ -66,4 +66,12 @@ fun kOperator() {
     status = !(1 > 2); println(status) // !false = true
     status = !((1 < 2) || (3 < 4)); println(status) // !(true || false) = !true = false
 
+    println("--------------------------")
+    // โอเปอเรเตอร์การกำหนดช่วงข้อมูล (Range Operator)
+    for (x1 in 1..10) print("$x1 "); println() // 1 2 3 4 5 6 7 8 9 10
+    for (x2 in 0..100 step 2) print("$x2 "); println() // 0 2 4 6 8 ... 100
+    for (x3 in 10..20 step 3) print("$x3 "); println() // 10 13 16 19
+    for (x4 in 'a'..'f') print("$x4 "); println() // a b c d e f
+    for (x5 in 'K'..'Z' step 2) print("$x5 "); println() // K M O Q S U W Y
+
 }

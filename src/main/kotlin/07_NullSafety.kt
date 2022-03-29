@@ -25,4 +25,14 @@ fun kNullSafety() {
     val y = b ?: -1.0
     println(y) // 1.23
 
+    println("-------------------------")
+
+    val aa: Int? = 10
+    val bb: Int? = 20
+    val c: Int = aa!! + bb!!
+    println(c)
+    val str: String? = "123"
+    val xx: Int = str!!.toInt()
+    print(xx)
+
 }

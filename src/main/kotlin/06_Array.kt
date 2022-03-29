@@ -73,4 +73,11 @@ fun kArray() {
     // val str = numbers.joinToString(" - ")
     // println(str) //7 - 11 - 1009 - 108 - 101
 
+    println("-----------------")
+
+    // ฟังก์ชันสำหรับการคำนวณ
+    val radius = 10.0
+    val circleArea = PI * radius.pow(2)
+    println(circleArea)
+
 }

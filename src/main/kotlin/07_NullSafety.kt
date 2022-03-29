@@ -13,4 +13,16 @@ fun kNullSafety() {
     // วิธีที่ 2 ใช้ Call Safety (?)
     books = books?.dec()
     println(books)
+
+    println("-------------------------")
+    val a: Int? = null
+    val x = a ?: 0 //หาก a เป็น null ตัวแปร x จะเท่ากับ 0 แต่หากไม่เป็น null ตัวแปร x = a
+    println(x) // 10
+    /* เทียบเท่ากับ
+      val x = if (a != null) a else 0
+    */
+    val b: Double? = 1.23
+    val y = b ?: -1.0
+    println(y) // 1.23
+
 }

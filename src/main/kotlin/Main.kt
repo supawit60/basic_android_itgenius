@@ -3,5 +3,6 @@ fun main() {
 //    kVariables()
 //    kOperator()
 //    kConditions()
-    kLoop()
+//    kLoop()
+    kArray()
 }

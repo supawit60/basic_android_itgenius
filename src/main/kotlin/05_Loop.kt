@@ -42,9 +42,34 @@ fun kLoop() {
 
     println("-----------------")
     // การใช้ลูปแบบ do-while
-    do {
-        print("กรุณาใส่รหัส >> ")
-        var code = readLine()
-    } while (code != "1234")
-    println("ขอบคุณค่ะ")
+//    do {
+//        print("กรุณาใส่รหัส >> ")
+//        var code = readLine()
+//    } while (code != "1234")
+//    println("ขอบคุณค่ะ")
+
+    println("-----------------")
+// การใช้คำสั่ง break
+    var sum = 0
+    for (i in 1..10) {
+        if (i == 5) {
+            break
+        }
+        sum += i // 1+2+3+4
+    }
+    println(sum) //sum = 10
+
+    println("-----------------")
+    // คำสั่ง continue
+    // หาผลรวมของตัวเลข 1-10 แต่ไม่รวมเลข 5
+    var sumdata = 0
+    for (i in 1..10) {
+        if (i == 5) {
+            continue
+        }
+        sumdata += i
+    }
+    println(sumdata) //sum = 50
+
+
 }

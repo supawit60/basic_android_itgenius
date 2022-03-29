@@ -1,3 +1,4 @@
+import java.text.NumberFormat
 import kotlin.math.*
 import kotlin.random.Random
 
@@ -95,5 +96,13 @@ fun kArray() {
     println(d)
     println(bool)
 
+    println("-----------------")
+    // ตัวอย่างการใช้ NumberFormat
+    var numFormat = NumberFormat.getInstance()
+    var strf = numFormat.format(1234567.89)
+    println(strf) //1,234,567.89
+    numFormat = NumberFormat.getCurrencyInstance()
+    strf = numFormat.format(2596530)
+    println(strf) //THB2,596,530.00 (ขึ้นกับการตั้งค่าในระบบปฏิบัติการ)
 
 }
